@@ -7,7 +7,8 @@ const cors = require('cors');
 const app = express();
 
 const authController = require('./controllers/authController')
-const propertyController = require('./controllers/propertyController')
+const propertyController = require('./controllers/propertyController');
+const uploadController = require('./controllers/uploadController');
 
 
 
@@ -20,9 +21,14 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 
-// controllers
+// user auth controllers
 app.use("/auth", authController);
+
+// property controllers
 app.use("/property", propertyController);
+
+// image upload controller
+app.use("/upload", uploadController);
 
 // start server
 app.listen(process.env.PORT, () => console.log("Server has been started.."))
