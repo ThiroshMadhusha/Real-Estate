@@ -1,0 +1,66 @@
+.container{
+    height: calc(100vh - 60px);
+    width: 100%;
+    background-image: url(../../assets/img1.jpg);
+    background-size: cover;
+    background-color: rgba(0,0,0,0.8);
+    background-blend-mode: darken;
+}
+.wrapper{
+    min-width: 1180px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper > h2{
+    font-size: 48px;
+    font-weight: bold;
+    color: #fff;
+    white-space: nowrap;
+    margin-bottom: 2.5rem;
+}
+
+.wrapper > h5{
+    color: #efefef;
+    font-size: 36px;
+    margin-bottom: 3rem;
+}
+
+.wrapper > .options{
+    width: 70%;
+    background-color: #fff;
+    padding: 1.25rem 1.5rem;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.wrapper > .options > select{
+    height: 40px;
+    min-width: 160px;
+    max-width: 200px;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    outline: none;
+    padding: 0.25rem 0.75rem;
+    background-color: #f9962c;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.options > .searchIcon{
+    padding: 0.6rem;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #efefef;
+    fill: #fff;
+    cursor: pointer;
+    background : linear-gradient(90deg, rgb(241, 139, 21) 0%, rgb(250, 150, 0) 35%, rgb(231, 212, 2) 100%)
+}
